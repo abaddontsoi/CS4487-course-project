@@ -1,7 +1,7 @@
 import torch.nn as nn
 import torch.nn.functional as F
 
-class Model(nn):
+class Model(nn.Module):
     def __init__(self):
         super(Model, self).__init__()
         self.conv1 = nn.Conv2d(3, 32, 3, 1)
