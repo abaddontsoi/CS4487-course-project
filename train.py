@@ -7,7 +7,7 @@ from tqdm import tqdm
 from dataloader import data_loader
 from model import Model
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # ===============================
 # Train-Validate
