@@ -3,8 +3,9 @@
 #SBATCH --nodes=1
 #SBATCH --output=logs/train_%j.out
 #SBATCH --error=logs/train_%j.err
-#SBATCH --time=2:00:00
+#SBATCH --time=12:00:00
 #SBATCH --partition=coursework
+#SBATCH --qos=coursework
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=32G       
