@@ -4,3 +4,4 @@ test/
 *.pth
 logs/
 __pycache__
+submission.csv
