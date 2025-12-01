@@ -3,9 +3,8 @@
 #SBATCH --nodes=1
 #SBATCH --output=logs/train_%j.out
 #SBATCH --error=logs/train_%j.err
-#SBATCH --time=12:00:00
+#SBATCH --time=02:00:00
 #SBATCH --partition=coursework
-#SBATCH --account=coursework
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=32G       
@@ -28,6 +27,6 @@ pip install -r requirements.txt   # Install requirements
 jupyter nbconvert --to notebook --execute Train.ipynb --output logs/train
 
 # Run the prediction jupyter notebook
-jupyter nbconvert --to notebook --execute Test.ipynb --output logs/train
+# jupyter nbconvert --to notebook --execute Test.ipynb --output logs/train
 
 echo "Job finished at $(date)"
