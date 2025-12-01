@@ -25,9 +25,9 @@ pip install -r requirements.txt   # Install requirements
 
 # Run the training jupyter notebook
 echo "Start training at $(date)"
-jupyter nbconvert --to notebook --execute TrainConNeXt.ipynb --output logs/train
+jupyter nbconvert --to notebook --execute TrainPureSwin.ipynb --output logs/train
 
 # Run the prediction jupyter notebook
-# jupyter nbconvert --to notebook --execute Test.ipynb --output logs/train
+jupyter nbconvert --to notebook --execute TestPureSwin.ipynb --output logs/train
 
 echo "Job finished at $(date)"
