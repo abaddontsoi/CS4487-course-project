@@ -24,7 +24,7 @@ pip install -r requirements.txt   # Install requirements
 # ==================== Training Command ====================
 
 # Run the training jupyter notebook
-jupyter nbconvert --to notebook --execute Train.ipynb --output logs/train
+jupyter nbconvert --to notebook --execute TrainConNeXt.ipynb --output logs/train
 
 # Run the prediction jupyter notebook
 # jupyter nbconvert --to notebook --execute Test.ipynb --output logs/train
